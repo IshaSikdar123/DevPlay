@@ -507,19 +507,23 @@ body {
 
 /* GIF section styling */
 .gif-section {
-    flex: 1; /* Allow the GIF section to take available space */
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 2rem; /* Added padding for spacing */
+    position: relative; /* Needed for absolute positioning of iframe */
 }
 
 .gif-section iframe {
-    margin-left: 50rem;
-    top: 0;
+    margin-left: 50rem; /* Adjusted margin for spacing */
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
+    position: absolute; /* Adjusted positioning */
+    bottom: 10rem; /* Adjusted to ensure the iframe stays at the bottom */
 }
+
 
 
 /* Responsive adjustments */
